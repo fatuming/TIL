@@ -1,6 +1,6 @@
 import os
 
-filePath = "/home/seobuntu/Desktop/Python/003_Hanhwa/xmls"
+filePath = "put right path"
 Files = os.listdir(filePath)
 
 
