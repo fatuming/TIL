@@ -5,14 +5,13 @@ import time
 import telegram
 import requests
 
-mask_url = 'url'
+#camera_url = 'https://smartstore.naver.com/weus/products/747069620'
+mask_url = 'https://smartstore.naver.com/sangkong/products/4762917002'
 
-bot = telegram.Bot(token='token')
-chat_id = id
+bot = telegram.Bot(token='1027794161:AAFx7CM61-2aF7UcK84OdBk2POE7n6opKyY')
+chat_id = -1001298145554
 
-check_status = 1
-
-while check_status == 1:
+while True:
     webpage = urlopen(mask_url)
     source = BeautifulSoup(webpage, 'html.parser')
     target = source.find('span', {'class':'buy'}).find('a')['class'][0]
@@ -21,12 +20,12 @@ while check_status == 1:
     #time.sleep(10)
 
     if target == '_stopDefault':
-        #bot.sendMessage(chat_id=chat_id, text='test: not yet')
+#        bot.sendMessage(chat_id=chat_id, text='test: not yet')
         print ("**not yet**", timestamp)
 
     else:
-        bot.sendMessage(chat_id=chat_id, text='!!!!right now!!!!')
-        print ("*****right now*****", timestamp)
+        bot.sendMessage(chat_id=chat_id, text='**상공양행**right now!!!!')
+        print ("*****right now: 상공양행*****", timestamp)
         
     time.sleep(5)
 
