@@ -5,11 +5,11 @@ import time
 import telegram
 import requests
 
-#camera_url = 'https://smartstore.naver.com/weus/products/747069620'
-mask_url = 'https://smartstore.naver.com/sangkong/products/4762917002'
+#camera_url = 'url that you want'
+mask_url =  'url that you want'
 
-bot = telegram.Bot(token='1027794161:AAFx7CM61-2aF7UcK84OdBk2POE7n6opKyY')
-chat_id = -1001298145554
+bot = telegram.Bot(token='token')
+chat_id = id
 
 while True:
     webpage = urlopen(mask_url)
@@ -24,8 +24,8 @@ while True:
         print ("**not yet**", timestamp)
 
     else:
-        bot.sendMessage(chat_id=chat_id, text='**상공양행**right now!!!!')
-        print ("*****right now: 상공양행*****", timestamp)
+        bot.sendMessage(chat_id=chat_id, text='****right now!!!!')
+        print ("*****right now:*****", timestamp)
         
     time.sleep(5)
 
