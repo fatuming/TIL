@@ -4,6 +4,7 @@ from datetime import datetime
 import time
 import telegram
 import requests
+#should install telegrambot
 
 #camera_url = 'url that you want'
 mask_url =  'url that you want'
