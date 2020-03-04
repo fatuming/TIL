@@ -27,6 +27,8 @@ while True:
     else:
         bot.sendMessage(chat_id=chat_id, text='****right now!!!!')
         print ("*****right now:*****", timestamp)
+
+# Sometimes that is not working
         
     time.sleep(5)
 
